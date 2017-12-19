@@ -30,5 +30,4 @@ for i in range(100):
     result = min_cut(graph.copy())
     results.append(result)
 
-
 print(sorted(results)[:10])
