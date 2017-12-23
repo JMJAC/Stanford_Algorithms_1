@@ -93,6 +93,6 @@ resource.setrlimit(resource.RLIMIT_STACK,(hardlimit,hardlimit))
 leaders = compute_SCC(graph)
 largest = []
 for i in leaders:
-    largest.append(sum([1 for i in leaders[i]]))
+    largest.append(len(leaders[i]))
 # Largest five SCC
 print(sorted(largest)[::-1][:5])
